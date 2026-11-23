@@ -96,7 +96,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
     "Overview", 
     "Attrition Analysis", 
     "Performance & Engagement",
-    "Predictions"
+    "Risk Analysis"
 ])
 
 with tab1:
@@ -250,7 +250,7 @@ with tab3:
         st.warning("Not enough data for statistical analysis with current filters")
 
 with tab4:
-    st.subheader("Attrition Risk Predictions")
+    st.subheader("Attrition Risk Analysis")
     
     # Model performance
     st.markdown("### 📊 Model Performance")
