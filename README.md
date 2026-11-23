@@ -65,6 +65,34 @@ Monthly income had the highest reported feature importance (25.3%).
 The analysis is intended as a demonstration of exploratory people analytics, not as a validated system for making employment decisions.
 
 
+## Reproducing the Analysis
+
+The Jupyter notebook `notebooks/Data Analysis & Insights.ipynb` contains the exploratory data analysis, statistical testing, feature engineering, Random Forest training and model evaluation.
+
+To reproduce the workflow:
+
+1. Clone the repository and navigate to its root directory.
+2. Install the project dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   pip install notebook
+   ```
+
+3. Launch Jupyter Notebook:
+
+   ```bash
+   jupyter notebook
+   ```
+
+4. Open `notebooks/Data Analysis & Insights.ipynb` and execute the cells in order.
+
+The notebook loads the original CSV from `data/`, creates engineered features and evaluates the classifier using a stratified 80/20 train-test split with `random_state=42`.
+
+**Note:** Running the notebook overwrites the local `data/cleaned_data.csv` and `models/attrition_model.pkl` files. Review generated outputs before committing replacements.
+
+The analysis uses a synthetic dataset. Model performance is exploratory and has not been externally validated.
+
 ## Installation
 
 ```bash
