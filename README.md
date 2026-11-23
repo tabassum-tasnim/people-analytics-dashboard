@@ -15,10 +15,11 @@ Employee turnover costs companies 50-200% of annual salary. This dashboard helps
 3. **Retention Lever**: Job satisfaction is statistically proven to differ between employees who stay vs. leave (p < 0.001)
 
 ## Features
-- 📊 Interactive workforce overview
-- 🎯 Attrition analysis by department, role, and tenure
-- 💼 Performance & engagement insights with statistical validation
-- 🔮 ML-powered attrition predictions with feature importance
+- Interactive workforce overview
+- Attrition analysis by department, role, and tenure
+- Performance & engagement insights with statistical validation
+- Attrition risk analysis using transparent rule-based segments, alongside saved machine-learning evaluation metrics and feature-importance summaries
+
 
 ## Tech Stack
 - **Data Processing**: Python, Pandas, NumPy
