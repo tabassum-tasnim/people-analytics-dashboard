@@ -323,9 +323,9 @@ with tab4:
 st.markdown("---")
 st.markdown("""
     <div style='text-align: center; color: gray; padding: 20px;'>
-        <p>👩‍💻 Built by Tasnim Tabassum | Data Scientist | 
+        <p>👩‍💻 Built by Tasnim Tabassum | AI Researcher | 
         <a href='https://www.linkedin.com/in/towmony' target='_blank'>LinkedIn</a> | 
-        <a href='https://tasnim-data-scientist.github.io/' target='_blank'>Portfolio</a></p>
+        <a href='https://tabassum-tasnim.github.io/' target='_blank'>Portfolio</a></p>
         <p style='font-size: 12px;'>People Analytics Dashboard • Python • Streamlit • Machine Learning</p>
     </div>
 """, unsafe_allow_html=True)
