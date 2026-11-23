@@ -99,5 +99,18 @@ Data Scientist | Machine Learning Engineer
 [LinkedIn](https://www.linkedin.com/in/towmony) | [Portfolio](https://tabassum-tasnim.github.io/)
 
 
+
 ## Dataset
-IBM HR Analytics Employee Attrition Dataset (Kaggle)
+
+**Source:** [IBM HR Analytics Employee Attrition & Performance (Kaggle)](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+
+The dataset contains 1,470 fictional employee records and 35 original variables. It was created for analytics and educational purposes rather than collected from an actual workforce.
+
+**Research limitations:**
+- The dataset does not represent real IBM employees.
+- Observed associations may reflect how the synthetic data was generated.
+- Results cannot be assumed to generalize to real organizations.
+- The analysis demonstrates statistical and machine-learning methods rather than a validated HR decision-support system.
+
+The project is intended for exploratory analysis, methodological demonstration and educational use.
+
