@@ -5,11 +5,21 @@ Interactive analytics dashboard providing insights into employee attrition, enga
 
 **Live Dashboard:** [Explore the Interactive Dashboard](https://people-analytics-dashboard-v1.streamlit.app/)
 
+
 ## Business Problem
-Employee turnover costs companies 50-200% of annual salary. This dashboard helps HR teams:
-- Identify at-risk employees before they leave
-- Understand key drivers of attrition
-- Make data-driven retention decisions
+
+Understanding employee attrition is an important challenge in people analytics. Organizations can benefit from examining how workforce characteristics, job satisfaction and employment history relate to employee turnover.
+
+This project explores three research-oriented questions:
+
+1. How does employee attrition vary across demographic and organizational characteristics?
+2. Which variables are associated with attrition in the dataset?
+3. How effectively can a Random Forest classifier distinguish employees who stayed from those who left?
+
+The project combines exploratory data analysis, statistical testing and machine-learning evaluation with an interactive Streamlit dashboard.
+
+Its purpose is to demonstrate analytical methods and communicate findings transparently, not to provide validated individual employee risk predictions or causal explanations of turnover.
+
 
 
 ## Key Findings
