@@ -93,10 +93,10 @@ st.markdown("---")
 
 # Tabs for different analyses
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📊 Overview", 
-    "🎯 Attrition Analysis", 
-    "💼 Performance & Engagement",
-    "🔮 Predictions"
+    "Overview", 
+    "Attrition Analysis", 
+    "Performance & Engagement",
+    "Predictions"
 ])
 
 with tab1:
@@ -125,7 +125,7 @@ with tab1:
         st.plotly_chart(fig, use_container_width=True)
 
 with tab2:
-    st.subheader("🎯 Attrition Deep Dive")
+    st.subheader("Attrition Deep Dive")
     
     col1, col2 = st.columns(2)
     
@@ -189,7 +189,7 @@ with tab2:
     st.success("💡 **Key Finding**: Employees with 0-2 years tenure have the highest attrition rate (28.9%)")
 
 with tab3:
-    st.subheader("💼 Performance & Engagement Insights")
+    st.subheader("Performance & Engagement Insights")
     
     col1, col2 = st.columns(2)
     
@@ -245,12 +245,12 @@ with tab3:
                 st.metric("Statistical Significance", "❌ NO", delta=f"p={p_value:.6f}")
         
         if p_value < 0.05:
-            st.success("💡 **Key Finding**: Job satisfaction is significantly lower for employees who left (statistically proven)")
+            st.success("**Key Finding**: Job satisfaction is significantly lower for employees who left (statistically proven)")
     else:
         st.warning("Not enough data for statistical analysis with current filters")
 
 with tab4:
-    st.subheader("🔮 Attrition Risk Predictions")
+    st.subheader("Attrition Risk Predictions")
     
     # Model performance
     st.markdown("### 📊 Model Performance")
@@ -263,10 +263,10 @@ with tab4:
     with col3:
         st.metric("Recall (Left)", "36%")
     
-    st.info("💡 The model correctly identifies 36% of employees who actually left, with 75% overall accuracy")
+    st.info("The model correctly identifies 36% of employees who actually left, with 75% overall accuracy")
     
     # Feature importance
-    st.markdown("### 🎯 Top Attrition Predictors")
+    st.markdown("### Top Attrition Predictors")
     
     feature_importance = pd.DataFrame({
         'Feature': ['MonthlyIncome', 'Age', 'YearsAtCompany', 'DistanceFromHome', 
@@ -290,7 +290,14 @@ with tab4:
     st.success("💡 **Key Finding**: Monthly Income is the #1 predictor of attrition (25.3% importance)")
     
     # High-risk employees
-    st.markdown("### ⚠️ High-Risk Employee Segments")
+    st.markdown("### High-Risk Employee Segments")
+    
+    st.caption(
+        "These segments are identified using predefined tenure and "
+        "job-satisfaction rules, not individual predictions from "
+        "the trained machine-learning model."
+    )
+
     
     # Calculate risk scores
     high_risk = filtered_df[
