@@ -281,28 +281,38 @@ with tab4:
     st.info("The model correctly identifies 36% of employees who actually left, with 75% overall accuracy")
     
     # Feature importance
-    st.markdown("### Top Attrition Predictors")
     
+    # Feature importance from the trained Random Forest
+    st.markdown("### Random Forest Feature Importance")
+
     feature_importance = pd.DataFrame({
-        'Feature': ['MonthlyIncome', 'Age', 'YearsAtCompany', 'DistanceFromHome', 
-                   'OverallSatisfaction', 'NumCompaniesWorked', 'WorkLifeBalance'],
-        'Importance': [0.253, 0.177, 0.171, 0.104, 0.088, 0.082, 0.048]
-    })
-    
+        "Feature": model.feature_names_in_,
+        "Importance": model.feature_importances_
+    }).sort_values("Importance", ascending=False)
+
     fig = px.bar(
         feature_importance,
-        x='Importance',
-        y='Feature',
-        orientation='h',
-        title='Feature Importance for Attrition Prediction',
-        labels={'Importance': 'Importance Score', 'Feature': 'Feature'},
-        color='Importance',
-        color_continuous_scale='Blues'
+        x="Importance",
+        y="Feature",
+        orientation="h",
+        title="Feature Importance from the Saved Model",
+        labels={
+            "Importance": "Importance Score",
+            "Feature": "Feature"
+        },
+        color="Importance",
+        color_continuous_scale="Blues"
     )
-    fig.update_layout(yaxis={'categoryorder':'total ascending'})
+
+    fig.update_layout(yaxis={"categoryorder": "total ascending"})
     st.plotly_chart(fig, use_container_width=True)
-    
-    st.success("💡 **Key Finding**: Monthly Income is the #1 predictor of attrition (25.3% importance)")
+
+    st.caption(
+        "Feature importances are extracted directly from the saved "
+        "Random Forest model. They describe the model's fitted "
+        "feature contributions and do not establish causality."
+    )
+
     
     # High-risk employees
     st.markdown("### High-Risk Employee Segments")
