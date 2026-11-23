@@ -9,10 +9,15 @@ Employee turnover costs companies 50-200% of annual salary. This dashboard helps
 - Understand key drivers of attrition
 - Make data-driven retention decisions
 
+
 ## Key Findings
-1. **Top Attrition Drivers**: Low monthly income, younger age, and short tenure
-2. **High-Risk Segment**: Employees with 0-2 years tenure have **28.9% attrition rate** (3.5x higher than long-tenured employees)
-3. **Retention Lever**: Job satisfaction is statistically proven to differ between employees who stay vs. leave (p < 0.001)
+
+- **Attrition patterns:** Attrition varied across employee characteristics, including age, monthly income and organizational tenure.
+- **Early-tenure employees:** Employees with shorter organizational tenure showed elevated attrition rates in the exploratory analysis.
+- **Job satisfaction:** Job satisfaction differed significantly between employees who stayed and those who left in the analyzed dataset.
+- **Predictive modeling:** Monthly income had the highest reported Random Forest feature importance. However, feature importance does not establish a causal relationship with attrition.
+
+These findings describe associations within the IBM HR Analytics dataset. They should not be interpreted as causal explanations or generalized to other organizations without further validation.
 
 ## Features
 - Interactive workforce overview
