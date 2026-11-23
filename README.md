@@ -29,10 +29,24 @@ Employee turnover costs companies 50-200% of annual salary. This dashboard helps
 - **Dashboard**: Streamlit
 - **Deployment**: Streamlit Cloud (coming soon)
 
+
 ## Model Performance
-- **Accuracy**: 75%
-- **ROC-AUC**: 0.670
-- **Top Predictor**: Monthly Income (25.3% importance)
+
+A Random Forest classifier was evaluated on a stratified 20% test split of the IBM HR Analytics dataset.
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 75% |
+| ROC-AUC | 0.670 |
+| Precision (employees who left) | 28% |
+| Recall (employees who left) | 36% |
+
+Monthly income had the highest reported feature importance (25.3%).
+
+**Limitations:** The model demonstrated limited ability to identify employees who left, missing approximately 64% of positive cases in the test set. These results come from a historical sample rather than external validation. The dashboard displays saved model metrics and rule-based risk segments; it does not currently generate individual predictions using the trained model.
+
+The analysis is intended as a demonstration of exploratory people analytics, not as a validated system for making employment decisions.
+
 
 ## Installation
 
