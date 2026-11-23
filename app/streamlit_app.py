@@ -46,8 +46,10 @@ st.title("👥 People Analytics Dashboard")
 st.markdown("""
     **Interactive insights into workforce attrition, performance, and engagement**
     
-    This dashboard analyzes employee data to identify attrition patterns and predict at-risk employees.
-    Use the filters in the sidebar to explore different departments.
+    This dashboard explores employee attrition patterns, job satisfaction and workforce characteristics.
+    It presents historical model evaluation results and rule-based risk segments rather than individual ML predictions.
+    Use the sidebar filters to compare departments and employee groups.
+
 """)
 
 st.markdown("---")
