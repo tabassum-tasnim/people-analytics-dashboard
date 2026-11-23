@@ -3,6 +3,8 @@
 ## Overview
 Interactive analytics dashboard providing insights into employee attrition, engagement, and performance drivers.
 
+**Live Dashboard:** [Explore the Interactive Dashboard](https://people-analytics-dashboard-v1.streamlit.app/)
+
 ## Business Problem
 Employee turnover costs companies 50-200% of annual salary. This dashboard helps HR teams:
 - Identify at-risk employees before they leave
@@ -32,7 +34,7 @@ These findings describe associations within the IBM HR Analytics dataset. They s
 - **Statistical Analysis**: SciPy
 - **Visualization**: Plotly, Matplotlib, Seaborn
 - **Dashboard**: Streamlit
-- **Deployment**: Streamlit Cloud (coming soon)
+- **Deployment**: Streamlit Community Cloud
 
 
 ## Model Performance
