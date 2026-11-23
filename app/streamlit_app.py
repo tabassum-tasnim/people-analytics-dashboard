@@ -262,6 +262,13 @@ with tab4:
     
     # Model performance
     st.markdown("### 📊 Model Performance")
+    
+    st.caption(
+        "These are saved evaluation results from the original "
+        "stratified 20% test split. They are not recalculated "
+        "when dashboard filters change."
+    )
+
     col1, col2, col3 = st.columns(3)
     
     with col1:
