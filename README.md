@@ -75,7 +75,8 @@ people-analytics-dashboard/
 ## Author
 **Tasnim Tabassum**  
 Data Scientist | Machine Learning Engineer  
-[LinkedIn](https://www.linkedin.com/in/towmony) | [Portfolio](https://tasnim-data-scientist.github.io/)
+[LinkedIn](https://www.linkedin.com/in/towmony) | [Portfolio](https://tabassum-tasnim.github.io/)
+
 
 ## Dataset
 IBM HR Analytics Employee Attrition Dataset (Kaggle)
