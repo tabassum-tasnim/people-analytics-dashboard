@@ -245,7 +245,13 @@ with tab3:
                 st.metric("Statistical Significance", "❌ NO", delta=f"p={p_value:.6f}")
         
         if p_value < 0.05:
-            st.success("**Key Finding**: Job satisfaction is significantly lower for employees who left (statistically proven)")
+            
+            st.success(
+                "**Key Finding:** Job satisfaction differed significantly "
+                "between employees who stayed and those who left "
+                "(p < 0.05). This association does not establish causality."
+            )
+
     else:
         st.warning("Not enough data for statistical analysis with current filters")
 
