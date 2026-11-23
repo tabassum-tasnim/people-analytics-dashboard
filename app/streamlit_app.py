@@ -23,8 +23,18 @@ def load_data():
     import os
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_path = os.path.join(root_dir, 'data', 'cleaned_data.csv')
+    
     df = pd.read_csv(data_path)
+
+    df["TenureGroup"] = pd.cut(
+        df["YearsAtCompany"],
+        bins=[0, 2, 5, 10, 40],
+        labels=["0-2y", "2-5y", "5-10y", "10y+"],
+        include_lowest=True
+    )
+
     return df
+
 
 @st.cache_resource
 def load_model():
