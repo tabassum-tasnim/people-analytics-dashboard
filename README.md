@@ -37,7 +37,7 @@ Employee turnover costs companies 50-200% of annual salary. This dashboard helps
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/people-analytics-dashboard.git
+git clone https://github.com/tabassum-tasnim/people-analytics-dashboard.git
 
 # Navigate to project directory
 cd people-analytics-dashboard
